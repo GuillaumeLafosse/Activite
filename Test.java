@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MyActivity extends Activity implements View.OnClickListener{
+public class Test extends Activity implements View.OnClickListener{
     /**
      * Called when the activity is first created.
      */
