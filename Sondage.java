@@ -11,13 +11,13 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyActivity extends Activity {
+public class Songage extends Activity {
     /**
      * Called when the activity is first created.
      */
 
     private ImageView image;
-    private RadioButton radioMale;
+    private RadioButton radioGenre;
     private CheckBox check1, check2, check3, check4;
 
 
@@ -30,14 +30,14 @@ public class MyActivity extends Activity {
         check2 = (CheckBox) findViewById(R.id.check2);
         check3 = (CheckBox) findViewById(R.id.check3);
         check4 = (CheckBox) findViewById(R.id.check4);
-        radioMale = (RadioButton) findViewById(R.id.radioMale);
+        RadioGenre = (RadioButton) findViewById(R.id.RadioGenre);
         image = (ImageView) findViewById(R.id.imageview);
 
     }
 
     public void clickBouton(View view) {
       /*  int id;
-        if(radioMale.isChecked()){
+        if(radioGenre.isChecked()){
             id = R.drawable.icon_male;
         }else{
             id = R.drawable.icon_female;
@@ -47,7 +47,7 @@ public class MyActivity extends Activity {
         /*l'expression ternaire ci-dessous est
         strictement equivalente à celle commentee ci-dessus*/
         int imageId =
-                (radioMale.isChecked())? R.drawable.icon_male : R.drawable.icon_female;
+                (RadioGenre.isChecked())? R.drawable.icon_male : R.drawable.icon_female;
         image.setImageResource(imageId);
 
         String lineSeparator = System.getProperty("line.separator");
