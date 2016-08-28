@@ -36,16 +36,7 @@ public class Songage extends Activity {
     }
 
     public void clickBouton(View view) {
-      /*  int id;
-        if(radioGenre.isChecked()){
-            id = R.drawable.icon_male;
-        }else{
-            id = R.drawable.icon_female;
-        }
-        */
-
-        /*l'expression ternaire ci-dessous est
-        strictement equivalente à celle commentee ci-dessus*/
+ 
         int imageId =
                 (RadioGenre.isChecked())? R.drawable.icon_male : R.drawable.icon_female;
         image.setImageResource(imageId);
